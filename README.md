@@ -14,10 +14,14 @@ Built with plain HTML, CSS and JavaScript, using [GSAP](https://gsap.com/) and S
 
 | | |
 |---|---|
-| ![Hero section](<img width="1348" height="631" alt="image" src="https://github.com/user-attachments/assets/99645b5e-a94e-40de-80d1-e41bdcf861f9" />
-| ![The Creed section](<img width="1352" height="633" alt="image" src="https://github.com/user-attachments/assets/1102087c-fc95-4ef6-91dd-da4348f01a77" />
-| ![Kassandra section](<img width="1350" height="633" alt="image" src="https://github.com/user-attachments/assets/101346b2-0fc0-47ab-8dd1-3bc673f63f84" />
-| ![Sync complete section](<img width="1352" height="630" alt="image" src="https://github.com/user-attachments/assets/08f73bc0-e947-4a49-a6af-f5f5a26bb00e" />
+| ![Hero section](<img width="1348" height="631" alt="image" src="https://github.com/user-attachments/assets/965085bf-3a26-4244-9fa6-48cacf37e126" />
+ />
+| ![The Creed section](<img width="1352" height="633" alt="image" src="https://github.com/user-attachments/assets/268602ad-ebb5-48eb-9427-16697b39bae7" />
+ />
+| ![Kassandra section](<img width="1350" height="633" alt="image" src="https://github.com/user-attachments/assets/1e5609f3-a3d4-413e-8426-ec3d00b87b9a" />
+ />
+| ![Sync complete section](<img width="1352" height="630" alt="image" src="https://github.com/user-attachments/assets/cedb1e86-e90c-4759-99de-c5c21d266657" />
+ />
 |
 
 ---

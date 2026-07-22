@@ -1,0 +1,1880 @@
+/* ============================================================
+   FONTS
+   ============================================================ */
+
+@font-face {
+  font-family: 'AssassinsCreed';
+  src: url('../fonts/assassin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ============================================================
+   RESET
+   ============================================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  max-width: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* ============================================================
+   GLOBAL STYLES / TYPOGRAPHY
+   ============================================================ */
+body {
+  font-family: 'Ropa Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cinzel', serif;
+  font-weight: normal;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 48px;
+  font-family: 'Ropa Sans', sans-serif;
+}
+
+p {
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* ============================================================
+   LAYOUT / CONTAINER
+   ============================================================ */
+.container {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.container,
+.character-container,
+.creed-container,
+.latest-container,
+.shadows-container,
+.syndicate-container {
+  width: min(92%, 1200px);
+  margin: auto;
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.header {
+  position: fixed;
+  top: 12px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.imagem-reduzida {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+
+.imagem-reduzida-2 {
+  width: 60px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Background video fills the hero section */
+.video-teste {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Keeps text and logos above the video */
+.hero .container {
+  position: relative;
+  z-index: 2;
+  color: black;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'AssassinsCreed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero.intro .container h1 {
+  color: #000000;
+}
+
+.hero.intro .container h1 .highlight {
+  color: #C1232C;
+  font-family: 'AssassinsCreed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 70px;
+}
+
+.hero.intro .container .hero-subtitle {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 30px;
+  color: rgb(66, 66, 66);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  opacity: 0.7;
+  margin-top: 25px;
+  display: inline-block;
+}
+
+.intro {
+  background-image: url(../img/background.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  h1 {
+    font-size: 70px;
+  }
+
+  span {
+    font-family: 'quinor', sans-serif;
+    font-size: 48px;
+  }
+}
+
+/* Fixed Animus background video, shown behind every character section */
+.animus-bg-global {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Removes each section's own background so the Animus video shows through */
+.character-section {
+  background-color: transparent !important;
+  background-image: none !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================================
+   CREED SECTION (tenets + central emblem)
+   ============================================================ */
+.creed-section {
+  position: relative;
+  background-color: #ffffff;
+  background-image: url('../img/animus_2_0_memory_corridor_by_amrasfarassion_d49zfwc.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 120px 20px 100px;
+}
+
+.creed-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.creed-orbit-grid {
+  display: grid;
+  /* 3 columns: the middle one adjusts to the emblem's size (auto) */
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 20px 50px;
+}
+
+.center-logo-box {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.center-creed-title {
+  font-family: 'AssassinsCreed', sans-serif;
+  font-size: 50px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.card-left {
+  grid-column: 1;
+  text-align: right;
+}
+
+.card-right {
+  grid-column: 3;
+  text-align: left;
+}
+
+.card-bottom {
+  grid-column: 1 / span 3;
+  justify-self: center;
+  text-align: center;
+  max-width: 500px;
+  margin-top: 40px;
+}
+
+.tenet-card {
+  background: none;
+  border: none;
+  padding: 10px;
+}
+
+.tenet-number {
+  font-family: 'AssassinsCreed', sans-serif;
+  font-size: 25px;
+  color: #C1232C;
+  margin-bottom: 8px;
+}
+
+.tenet-card h3 {
+  font-family: 'AssassinsCreed', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: #000000;
+  margin: 0 0 10px 0;
+}
+
+.tenet-card p {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #222121;
+  margin: 0;
+}
+
+.orbit-logo {
+  width: 220px;
+  height: auto;
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.15));
+  animation: smoothFloat 4s ease-in-out infinite;
+}
+
+@keyframes smoothFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+@media (max-width: 900px) {
+  .creed-orbit-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .card-left,
+  .center-logo-box,
+  .card-right,
+  .card-bottom {
+    grid-column: 1 / span 1;
+    text-align: center;
+  }
+
+  .center-logo-box {
+    grid-row: 1;
+  }
+}
+
+/* ============================================================
+   FIXED UI: SIDE TIMELINE NAV & SYNC PERCENTAGE
+   ============================================================ */
+.timeline-wrapper {
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: .4s;
+  padding-top: 70px;
+}
+
+.timeline-wrapper.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+  margin: 5px 0;
+}
+
+.timeline-item span {
+  width: 90px;
+  text-align: right;
+  color: #3f3e3e;
+  transition: .3s;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #888;
+  border: 2px solid white;
+  transition: .35s;
+  position: relative;
+}
+
+.timeline-item:not(:last-child) .dot::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 32px;
+  background: white;
+  opacity: .5;
+}
+
+.timeline-item.active span {
+  color: white;
+  font-weight: bold;
+}
+
+.timeline-item.active .dot {
+  background: #c1232c;
+  transform: scale(1.45);
+}
+
+.sync-percentage {
+  position: fixed;
+  top: 90px;
+  left: 10px;
+  z-index: 9999;
+  font-family: 'Oswald', sans-serif;
+  color: #c1232c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.sync-percentage.visible {
+  opacity: 1;
+}
+
+.sync-title {
+  display: block;
+  color: #000000;
+  font-size: 11px;
+  letter-spacing: 4px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.sync-value {
+  display: block;
+  font-size: 30px;
+  line-height: 0.9;
+  padding-right: 80px;
+}
+
+/* ============================================================
+   CHARACTER SECTIONS — SHARED STYLES
+   ============================================================ */
+.character-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1.1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.character-image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-content-box {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.character-era-top {
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #C1232C;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  margin-top: 50px;
+}
+
+.character-name {
+  font-family: 'AssassinsCreed', sans-serif;
+  font-size: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0 0 4px 0;
+  line-height: 1;
+}
+
+.character-game-sub {
+  font-family: 'Oswald', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: #555555;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+}
+
+.character-bio {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #111111;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  text-align: justify;
+}
+
+.character-bio:last-child {
+  margin-bottom: 0;
+}
+
+.character-bio,
+.character-bio-2 {
+  text-wrap: pretty;
+}
+
+.character-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.highlight-text {
+  font-weight: 700;
+  color: #000000;
+}
+
+/* Flips the grid so the image/content swap sides visually */
+.section-reversed .character-container {
+  direction: rtl;
+}
+
+.section-reversed .character-content-box {
+  direction: ltr;
+  text-align: left;
+}
+
+.section-reversed .character-image-box {
+  direction: ltr;
+}
+
+@media (max-width: 900px) {
+  .character-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .character-content-box {
+    text-align: center;
+  }
+
+  .character-bio {
+    text-align: center;
+  }
+}
+
+/* ============================================================
+   CHARACTER SECTIONS — INDIVIDUAL OVERRIDES
+   ============================================================ */
+
+/* --- Kassandra --- */
+.character-section.kassandra-bg {
+  background-color: #f6efe2;
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.character-section.kassandra-bg .character-name {
+  font-family: 'AssassinsCreed', sans-serif;
+  font-size: 50px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0 0 4px 0;
+  line-height: 1;
+}
+
+.character-section.kassandra-bg .character-img {
+  max-width: 450px;
+  padding-top: 200px;
+}
+
+.character-section.kassandra-bg .character-bio-2 {
+  padding-bottom: 120px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #111111;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  text-align: justify;
+}
+
+/* --- Bayek --- */
+.character-section.bayek-bg {
+  background-color: #f3eada;
+  padding: 30px 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.character-section.bayek-bg .character-name {
+  font-size: 45px;
+}
+
+.character-section.bayek-bg .character-content-box {
+  padding-left: 45px;
+}
+
+.character-section.bayek-bg .character-img {
+  max-width: 350px;
+  margin-right: 45px;
+}
+
+.character-section.bayek-bg .character-bio-2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #111111;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  text-align: justify;
+}
+
+/* --- Basim --- */
+.character-section.basim-bg {
+  background-color: #f1ebd9;
+  padding: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.character-section.basim-bg .character-name {
+  font-family: 'AssassinsCreed', sans-serif;
+  font-size: 40px;
+  color: #000000;
+  margin: 0 0 10px 0;
+}
+
+.character-section.basim-bg .character-img {
+  max-width: 250px;
+  margin-left: 20px;
+}
+
+.character-section.basim-bg .character-content-box {
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+
+/* --- Eivor --- */
+.character-section.eivor-bg {
+  background-color: #eae3d2;
+  padding: 40px 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.character-section.eivor-bg .character-name {
+  font-family: 'AssassinsCreed', sans-serif;
+  font-size: 32px;
+  color: #000000;
+  margin: 0 0 10px 0;
+}
+
+.character-section.eivor-bg .character-content-box {
+  padding-left: 100px;
+  padding-bottom: 90px;
+}
+
+.character-section.eivor-bg .character-img {
+  max-width: 270px;
+  height: auto;
+  margin-right: 45px;
+  padding-bottom: 50px;
+}
+
+/* --- Altaïr --- */
+.character-section.altair-bg {
+  background-color: #f4eee1;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.character-section.altair-bg .character-name {
+  font-family: 'AssassinsCreed', sans-serif;
+  font-size: 35px;
+  color: #000000;
+  margin: 0 0 10px 0;
+}
+
+.character-section.altair-bg .character-bio-2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #111111;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  text-align: justify;
+}
+
+.character-section.altair-bg .character-img {
+  max-width: 450px;
+  height: auto;
+  margin-left: 45px;
+  padding-bottom: 50px;
+}
+
+/* --- Ezio --- */
+.character-section.ezio-bg {
+  background-color: #f7eedb;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.ezio-bg .character-container {
+  position: relative;
+  z-index: 2;
+}
+
+.character-section.ezio-bg .character-img {
+  max-width: 320px;
+  height: auto;
+  margin-right: 45px;
+  padding-bottom: 10px;
+}
+
+.character-section.ezio-bg .character-name {
+  font-family: 'AssassinsCreed', sans-serif;
+  font-size: 32px;
+  color: #000000;
+  margin: 0 0 10px 0;
+}
+
+.character-section.ezio-bg .character-content-box {
+  padding-left: 100px;
+}
+
+.character-section.ezio-bg .character-bio-2 {
+  padding-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #111111;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  text-align: justify;
+}
+
+/* --- Shadows (Naoe & Yasuke) --- */
+.character-section.shadows-bg {
+  background-color: #f5ebd7;
+  padding: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.character-section.shadows-bg .character-era-top {
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #C1232C;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 50px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.shadows-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* 1 part left text, 2 parts center images, 1 part right text */
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 30px;
+  align-items: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.shadows-char-title {
+  font-family: 'AssassinsCreed', sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.shadows-text-left {
+  text-align: right;
+  padding-left: 40px;
+  padding-bottom: 90px;
+  max-width: 950px;
+}
+
+.shadows-text-right {
+  text-align: left;
+  padding-right: 40px;
+  padding-bottom: 90px;
+}
+
+.shadows-center-images {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.shadows-img {
+  max-width: 260px;
+  height: auto;
+  object-fit: contain;
+}
+
+.img-naoe {
+  max-width: 300px;
+  height: auto;
+  margin-right: 45px;
+  padding-bottom: 90px;
+}
+
+.img-yasuke {
+  max-width: 270px;
+  height: auto;
+  margin-right: 45px;
+  padding-bottom: 70px;
+}
+
+/* --- Edward --- */
+.character-section.edward-bg {
+  background-color: #f6ebd6;
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.character-section.edward-bg .character-img {
+  max-width: 300px;
+  height: auto;
+  padding-bottom: 80px;
+  margin-left: 45px;
+}
+
+.character-section.edward-bg .character-name {
+  font-size: 40px;
+}
+
+.character-section.edward-bg .character-bio-2 {
+  padding-bottom: 60px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #111111;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  text-align: justify;
+}
+
+/* --- Shay --- */
+.character-section.shay-bg {
+  background-color: #eaf0f2;
+  padding: 5px 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.character-section.shay-bg .character-img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
+
+.character-section.shay-bg .character-name {
+  font-size: 30px;
+}
+
+.character-section.shay-bg .character-bio-2 {
+  padding-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #111111;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  text-align: justify;
+}
+
+/* --- Connor --- */
+.character-section.connor-bg {
+  background-color: #f1ebd9;
+  padding: 50px 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.character-section.connor-bg .character-image-box {
+  width: 100%;
+}
+
+.character-section.connor-bg .character-img {
+  width: 520px;
+  max-width: 100%;
+  height: auto;
+  margin-left: 45px;
+  padding-bottom: 0px;
+}
+
+.character-section.connor-bg .character-name {
+  font-size: 35px;
+}
+
+.character-section.connor-bg .character-bio-2 {
+  padding-bottom: 30px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #111111;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  text-align: justify;
+}
+
+/* --- Arno --- */
+.character-section.arno-bg {
+  background-color: #f4ebd9;
+  padding: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.character-section.arno-bg .character-name {
+  font-size: 30px;
+}
+
+.character-section.arno-bg .character-content-box {
+  padding-left: 60px;
+}
+
+.character-section.arno-bg .character-img {
+  max-width: 350px;
+  margin-right: 45px;
+  padding-bottom: 10px;
+}
+
+.character-section.arno-bg .character-bio-2 {
+  padding-bottom: 30px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #111111;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  text-align: justify;
+}
+
+/* --- Syndicate (Jacob & Evie) --- */
+.character-section.syndicate-bg {
+  background-color: #eae3d5;
+  padding: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.character-section.syndicate-bg .character-era-top {
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #C1232C;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.syndicate-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* 1 part Jacob's text, 2 parts center twins, 1 part Evie's text */
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 30px;
+  align-items: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.syndicate-char-title {
+  font-family: 'AssassinsCreed', sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.syndicate-text-left {
+  text-align: right;
+  padding-left: 45px;
+  padding-bottom: 180px;
+  max-width: 950px;
+}
+
+.syndicate-text-right {
+  text-align: left;
+  padding-right: 45px;
+  padding-bottom: 180px;
+}
+
+.syndicate-center-images {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.syndicate-img {
+  max-width: 270px;
+  height: auto;
+  object-fit: contain;
+  padding-bottom: 150px;
+}
+
+.character-section.syndicate-bg .syndicate-img.img-jacob {
+  max-width: 300px;
+}
+
+/* ============================================================
+   SYNC COMPLETE SECTION
+   ============================================================ */
+.sync-complete {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sync-content {
+  z-index: 2;
+}
+
+.sync-status {
+  display: block;
+  color: rgb(167, 165, 165);
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  opacity: 0;
+}
+
+.sync-title-big {
+  font-family: 'Oswald', sans-serif;
+  color: #c1232c;
+  font-size: 70px;
+  letter-spacing: 12px;
+  margin: 0;
+  opacity: 0;
+}
+
+.sync-complete-text {
+  font-family: 'Oswald', sans-serif;
+  padding-top: 20px;
+}
+
+.sync-divider {
+  width: 0;
+  height: 2px;
+  background: #c1232c;
+  margin: 45px auto;
+}
+
+.sync-memory {
+  color: rgb(167, 165, 165);
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 6px;
+  font-size: 18px;
+  opacity: 0;
+}
+
+.sync-100 {
+  color: #c1232c;
+  font-family: 'Oswald', sans-serif;
+  font-size: 42px;
+  margin-top: 20px;
+  opacity: 0;
+}
+
+/* ============================================================
+   FEATURED GAME SECTION
+   ============================================================ */
+.latest-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0d0d0d;
+  box-sizing: border-box;
+}
+
+.latest-container {
+  max-width: 1200px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px;
+  background: rgba(35, 35, 35, 0.9);
+  border: 1px solid rgba(200, 163, 85, 0.35);
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+}
+
+.game-cover-box {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+}
+
+.cover-link {
+  position: relative;
+  display: block;
+  border: 1px solid rgba(200, 163, 85, 0.4);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.game-cover {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.play-icon {
+  font-size: 32px;
+  color: #c8a355;
+  background: rgba(0, 0, 0, 0.85);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #c8a355;
+  padding-left: 4px;
+}
+
+.cover-link:hover {
+  transform: scale(1.02);
+  border-color: #c8a355;
+}
+
+.cover-link:hover .play-overlay {
+  opacity: 1;
+}
+
+.game-info-box {
+  flex: 1;
+  text-align: left;
+}
+
+.game-info-box h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  color: #fff;
+  margin: 8px 0;
+  letter-spacing: 1.5px;
+  line-height: 1.1;
+}
+
+.latest-subtitle {
+  font-family: 'Oswald', sans-serif;
+  color: #c82323;
+  font-size: 15px;
+  margin-bottom: 20px;
+  letter-spacing: 1.2px;
+}
+
+.latest-desc {
+  font-family: 'Oswald', sans-serif;
+  font-size: 17px;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  font-size: 13px;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+
+.secondary-btn {
+  border: 1px solid #c8a355;
+  color: #c8a355;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.secondary-btn:hover {
+  background: #c8a355;
+  color: #000;
+}
+
+.primary-btn {
+  background: #c82323;
+  border: 1px solid #c82323;
+  color: #fff;
+}
+
+.primary-btn:hover {
+  background: #ec3535;
+  border-color: #ec3535;
+  color: #fff;
+}
+
+/* ============================================================
+   FOOTER — JOIN THE BROTHERHOOD
+   ============================================================ */
+.brotherhood-footer-section {
+  width: 100%;
+  padding: 70px 20px 40px 20px;
+  background: linear-gradient(180deg, #5c2025 0%, #3b1317 100%);
+  border-top: 2px solid #8d323a;
+  box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.brotherhood-content {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brotherhood-subtag {
+  font-family: 'Oswald', sans-serif;
+  color: #e0ad52;
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.brotherhood-main-title {
+  font-family: 'AssassinsCreed', sans-serif;
+  font-size: 52px;
+  color: #ffffff;
+  letter-spacing: 4px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.brotherhood-subtext {
+  font-family: 'Oswald', sans-serif;
+  color: #d8a7a7;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+
+.creed-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 10px 0 35px 0;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(224, 173, 82, 0.6), transparent);
+}
+
+.creed-logo {
+  width: 50px;
+  height: 50px;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.creed-logo img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 8px rgba(224, 173, 82, 0.4));
+}
+
+.footer-social-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.footer-social-nav a {
+  font-family: 'Oswald', sans-serif;
+  color: #f0f0f0;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-social-nav a:hover {
+  color: #e0ad52;
+  transform: translateY(-2px);
+}
+
+.nav-sep {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 12px;
+}
+
+.copyright-text {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .brotherhood-main-title {
+    font-size: 32px;
+  }
+
+  .nav-sep {
+    display: none;
+  }
+
+  .footer-social-nav {
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+
+/* ============================================================
+   GENERAL RESPONSIVENESS
+   ============================================================ */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 900px;
+    padding: 0 32px;
+  }
+
+  .header {
+    top: 20px;
+  }
+
+  h2 {
+    font-size: 72px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .intro h1 {
+    font-size: 88px;
+  }
+
+  .intro span {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 24px;
+  }
+
+  .header {
+    top: 16px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .intro h1 {
+    font-size: 36px;
+  }
+
+  .intro span {
+    font-size: 28px;
+  }
+}
+
+/* ============================================================
+   TABLET (max-width: 1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+
+  .imagem-reduzida {
+    max-width: 150px;
+  }
+
+  .imagem-reduzida-2 {
+    max-width: 50px;
+  }
+
+  .sync-percentage {
+    padding-top: 50px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .hero .highlight {
+    font-size: 49px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 22px !important;
+  }
+
+  .character-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .character-image-box {
+    order: 1;
+    justify-content: center;
+  }
+
+  .character-content-box {
+    order: 2;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+
+  .character-bio,
+  .character-bio-2 {
+    text-align: center !important;
+  }
+
+  .character-era-top {
+    margin-top: 20px;
+  }
+
+  .character-img {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    max-width: 340px !important;
+  }
+
+  .section-reversed .character-container {
+    direction: ltr;
+  }
+
+  .section-reversed .character-content-box {
+    direction: ltr;
+    text-align: center;
+  }
+
+  .timeline-wrapper {
+    right: 15px;
+    transform: translateY(-50%) scale(.85);
+  }
+
+  .sync-percentage {
+    left: 15px;
+    transform: scale(.85);
+  }
+
+  .latest-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .game-info-box {
+    text-align: center;
+  }
+
+  .btn-group {
+    justify-content: center;
+  }
+}
+
+/* ============================================================
+   MOBILE (max-width: 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+  .imagem-reduzida {
+    max-width: 150px;
+  }
+
+  .imagem-reduzida-2 {
+    max-width: 50px;
+  }
+
+  .sync-percentage {
+    padding-top: 90px;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+    line-height: 1.1;
+  }
+
+  .hero .highlight {
+    font-size: 29px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 16px !important;
+    letter-spacing: 2px;
+  }
+
+  .character-section {
+    padding: 60px 0 !important;
+  }
+
+  .character-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .character-content-box {
+    padding: 0 !important;
+  }
+
+  .character-era-top {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .character-name {
+    font-size: 30px !important;
+    letter-spacing: 1px;
+  }
+
+  .character-game-sub {
+    font-size: 16px;
+  }
+
+  .character-bio,
+  .character-bio-2 {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left !important;
+  }
+
+  .character-img {
+    max-width: 260px !important;
+    margin: auto !important;
+    padding: 0 !important;
+  }
+
+  .timeline-wrapper {
+    display: none;
+  }
+
+  .sync-percentage {
+    top: 15px;
+    left: 15px;
+    transform: scale(.70);
+  }
+
+  .center-creed-title {
+    font-size: 34px;
+  }
+
+  .orbit-logo {
+    width: 150px;
+  }
+
+  .latest-container {
+    padding: 25px;
+    gap: 25px;
+  }
+
+  .game-info-box h2 {
+    font-size: 28px;
+  }
+
+  .latest-desc {
+    font-size: 16px;
+  }
+
+  .btn-group {
+    flex-direction: column;
+  }
+
+  .action-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .sync-title-big {
+    font-size: 42px;
+    letter-spacing: 5px;
+  }
+
+  .sync-memory {
+    font-size: 15px;
+  }
+
+  .sync-100 {
+    font-size: 30px;
+  }
+
+  .brotherhood-main-title {
+    font-size: 34px;
+  }
+
+  .footer-social-nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* ============================================================
+   SHADOWS & SYNDICATE — RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+
+  /* --- Shadows --- */
+  .shadows-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 25px;
+  }
+
+  .shadows-text-left,
+  .shadows-text-right {
+    text-align: center;
+    padding: 0;
+    max-width: 700px;
+  }
+
+  .shadows-center-images {
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  /* --- Syndicate --- */
+  .syndicate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 25px;
+  }
+
+  .syndicate-text-left,
+  .syndicate-text-right {
+    text-align: center;
+    padding: 0;
+    max-width: 700px;
+  }
+
+  .syndicate-center-images {
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .shadows-header,
+  .syndicate-header {
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+
+  .shadows-header .character-era-top,
+  .syndicate-header .character-era-top {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .shadows-char-title,
+  .syndicate-char-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .shadows-center-images,
+  .syndicate-center-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .img-naoe,
+  .img-yasuke {
+    max-width: 220px;
+  }
+
+  .img-jacob,
+  .img-evie {
+    max-width: 220px !important;
+  }
+
+  .character-bio {
+    text-align: justify !important;
+    font-size: 16px;
+  }
+}

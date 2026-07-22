@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assassin's Creed Timeline</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Oswald:wght@200..700&family=Ropa+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="container">
+
+      <div class="logo-text">
+        <img src="img/pngegg.png" alt="assassin's creed text logo" class="imagem-reduzida">
+      </div>
+      <div class="logo">
+        <img src="img/250px-Assassins_creed_logo.png" alt="assassin's logo" class="imagem-reduzida-2">
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero intro">
+
+      <video class="video-teste" src="video/Digital_network_animation_sci-fi_202607182222.mp4" autoplay muted playsinline loop></video>
+
+      <div class="container">
+        <h1>Nothing is true. <span class="highlight">Everything is permitted.</span></h1>
+        <span class="hero-subtitle">Scroll to Synchronize</span>
+      </div>
+    </section>
+
+    <section class="creed-section">
+
+      <div class="creed-container">
+
+        <div class="creed-orbit-grid">
+
+          <!-- Left: Tenet I -->
+          <div class="tenet-card card-left">
+            <div class="tenet-number">I</div>
+            <h3>Stay your blade from the flesh of an innocent.</h3>
+            <p>Trust not the blade, but the motive. All innocents are within the protection of the Creed.</p>
+          </div>
+
+          <!-- Center: Central Emblem -->
+          <div class="center-logo-box">
+            <h2 class="center-creed-title">The Creed</h2>
+            <img src="img/Assassin’s-Creed-Logo-PNG-Photo.png" alt="Assassin's Creed Emblem" class="orbit-logo">
+          </div>
+
+          <!-- Right: Tenet II -->
+          <div class="tenet-card card-right">
+            <div class="tenet-number">II</div>
+            <h3>Hide in plain sight.</h3>
+            <p>Be unseen. Blend with the crowd. Acknowledge the shadows. Be the hidden hand.</p>
+          </div>
+
+          <!-- Bottom: Tenet III -->
+          <div class="tenet-card card-bottom">
+            <div class="tenet-number">III</div>
+            <h3>Never compromise the Brotherhood.</h3>
+            <p>We stand or fall as one. Your actions reflect upon all. The order must prevail.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Fixed UI: synchronization percentage -->
+    <div class="sync-percentage">
+      0%
+    </div>
+
+    <!-- Fixed UI: side timeline navigation -->
+    <div class="timeline-wrapper">
+
+      <div class="timeline">
+
+        <div class="timeline-item" data-target="kassandra">
+          <span>431 BCE</span>
+          <div class="dot"></div>
+        </div>
+
+        <div class="timeline-item" data-target="bayek">
+          <span>49 BCE</span>
+          <div class="dot"></div>
+        </div>
+
+        <div class="timeline-item" data-target="basim">
+          <span>861 CE</span>
+          <div class="dot"></div>
+        </div>
+
+        <div class="timeline-item" data-target="eivor">
+          <span>873 CE</span>
+          <div class="dot"></div>
+        </div>
+
+        <div class="timeline-item" data-target="altair">
+          <span>1191 CE</span>
+          <div class="dot"></div>
+        </div>
+
+        <div class="timeline-item" data-target="ezio">
+          <span>1476 CE</span>
+          <div class="dot"></div>
+        </div>
+
+        <div class="timeline-item" data-target="shadows">
+          <span>1579 CE</span>
+          <div class="dot"></div>
+        </div>
+
+        <div class="timeline-item" data-target="edward">
+          <span>1715 CE</span>
+          <div class="dot"></div>
+        </div>
+
+        <div class="timeline-item" data-target="shay">
+          <span>1752 CE</span>
+          <div class="dot"></div>
+        </div>
+
+        <div class="timeline-item" data-target="connor">
+          <span>1754 CE</span>
+          <div class="dot"></div>
+        </div>
+
+        <div class="timeline-item" data-target="arno">
+          <span>1789 CE</span>
+          <div class="dot"></div>
+        </div>
+
+        <div class="timeline-item" data-target="syndicate">
+          <span>1868 CE</span>
+          <div class="dot"></div>
+        </div>
+
+        <div class="timeline-progress">
+          <div class="timeline-line"></div>
+          <div class="timeline-fill"></div>
+          <div class="timeline-marker"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Fixed background video used behind all character sections -->
+    <video autoplay loop muted playsinline class="animus-bg-global">
+      <source src="video/Digital_simulation_evolving_node…_202607201348.mp4" type="video/mp4">
+    </video>
+
+    <section id="kassandra" class="character-section kassandra-bg">
+
+      <div class="character-container">
+
+        <!-- Left column: image -->
+        <div class="character-image-box">
+          <img src="img/ACOD_Kassandra_29.webp" alt="Kassandra" class="character-img">
+        </div>
+
+        <!-- Right column: content -->
+        <div class="character-content-box">
+          <span class="character-era-top">431 B.C.E. — Peloponnesian War</span>
+
+          <h2 class="character-name">Kassandra</h2>
+
+          <span class="character-game-sub">Assassin's Creed Odyssey</span>
+
+          <p class="character-bio">
+            Known as the Eagle-Bearer, Kassandra is a Spartan-born mercenary ("<strong class="highlight-text">Misthios</strong>") from the Peloponnesian War, wielding the Broken Spear of Leonidas, a powerful reliquia Isu of the First Civilization. Exiled after a tragic event in her youth, she navigated the conflicts of the ancient Greek world, uncovering the secrets of her bloodline and the foundations of what would become the Hidden Ones.
+          </p>
+
+          <p class="character-bio">
+            Her journey was one of epic tragedy and hidden truth, shaping the future of the world as she fought for order, facing the corrupted tendrils of the Cult of Cosmos. While she lived centuries before the official Assassin Brotherhood was formed, her choices and lineage laid the foundations, and her story remains a cornerstone of the Creed's long history.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bayek's section (note the extra 'section-reversed' class) -->
+    <section id="bayek" class="character-section bayek-bg section-reversed">
+
+      <div class="character-container">
+
+        <!-- Image column (stays the same in the HTML; CSS flips the visual position) -->
+        <div class="character-image-box">
+          <img src="img/1h6eqo036e3ksgs9bsao4su4er.png" alt="Bayek of Siwa" class="character-img">
+        </div>
+
+        <!-- Content column -->
+        <div class="character-content-box">
+          <span class="character-era-top">49 B.C.E. — Ptolemaic Period</span>
+
+          <h2 class="character-name">Bayek of Siwa</h2>
+
+          <span class="character-game-sub">Assassin's Creed Origins</span>
+
+          <p class="character-bio">
+            Bayek of Siwa was one of the last Medjay of Egypt and, alongside his wife Aya, the co-founder of the Hidden Ones—the organization that would evolve into the Assassin Brotherhood. Serving as a protector of his people, his path turned into a quest for vengeance after a heartbreaking personal tragedy involving the mysterious Order of the Ancients.
+          </p>
+
+          <p class="character-bio-2">
+            Operating from the shadows of Egypt's majestic pyramids and golden deserts, Bayek's journey marked the transition from traditional protector to a shadow warrior. By discarding his title and establishing the first tenets of the Creed, he ensured that the fight for human free will would endure silently through the dark pages of history.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Basim's section (standard positioning, same as Kassandra) -->
+    <section id="basim" class="character-section basim-bg">
+      <div class="character-container">
+
+        <!-- Left column: image -->
+        <div class="character-image-box">
+          <img src="img/ACV_Render_de_Basim.webp" alt="Basim Ibn Ishaq" class="character-img">
+        </div>
+
+        <!-- Right column: content -->
+        <div class="character-content-box">
+          <span class="character-era-top">861 C.E. — Golden Age of Baghdad</span>
+
+          <h2 class="character-name">Basim Ibn Ishaq</h2>
+
+          <span class="character-game-sub">Assassin's Creed Mirage</span>
+
+          <p class="character-bio">
+            Born in Baghdad, Basim Ibn Ishaq began his journey as a clever street thief, haunted by visions of a terrifying djinn. His life changed forever when he was recruited into the ancient ranks of the Hidden Ones by his mentor, Roshan, dedicating himself to their strict Creed and mastering the art of assassination from the shadows.
+          </p>
+
+          <p class="character-bio">
+            Operating during the Anarchy at Samarra, Basim grew to become one of the most lethal and resourceful Hidden Ones in history. However, his quest for justice and answers about his past eventually led him down a dark, fateful path, uncovering a profound connection to the First Civilization that would alter his destiny across generations.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Eivor's section (reversed positioning, same as Bayek) -->
+    <section id="eivor" class="character-section eivor-bg section-reversed">
+      <div class="character-container">
+
+        <!-- Image column (CSS pushes it to the right) -->
+        <div class="character-image-box">
+          <img src="img/628a603dbc2ec7ad957f4060.png" alt="Eivor Varinsdottir" class="character-img">
+        </div>
+
+        <!-- Content column (CSS pushes it to the left) -->
+        <div class="character-content-box">
+          <span class="character-era-top">873 C.E. — Viking Invasions of Britain</span>
+
+          <h2 class="character-name">Eivor Varinsdottir</h2>
+
+          <span class="character-game-sub">Assassin's Creed Valhalla</span>
+
+          <p class="character-bio">
+            Known as the Wolf-Kissed, Eivor Varinsdottir was a fierce Norse Viking raider who led her clan away from the war-torn shores of Norway to establish a new future in the fractured kingdoms of England. Driven by loyalty to her clan and her adoptive brother Sigurd, her destiny intertwined with a historic conflict much larger than her own.
+          </p>
+
+          <p class="character-bio">
+            Though she closely fought alongside the Hidden Ones and wielded the iconic Hidden Blade with brutal efficiency, Eivor refused to formally join their ranks, remaining fiercely independent. Her alliances across Anglo-Saxon England reshaped the thrones of empires, while she fought to secure her clan's legacy and confront the echoes of her past.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Altaïr's section (standard positioning, same as Basim/Kassandra) -->
+    <section id="altair" class="character-section altair-bg">
+      <div class="character-container">
+
+        <!-- Left column: image -->
+        <div class="character-image-box">
+          <img src="img/ACR_Render_de_Altaïr2.webp" alt="Altaïr Ibn-La'Ahad" class="character-img">
+        </div>
+
+        <!-- Right column: content -->
+        <div class="character-content-box">
+          <span class="character-era-top">1191 C.E. — The Third Crusade</span>
+
+          <h2 class="character-name">Altaïr Ibn-La'Ahad</h2>
+
+          <span class="character-game-sub">Assassin's Creed</span>
+
+          <p class="character-bio">
+            Born into the Levant Brotherhood, Altaïr Ibn-La'Ahad was a master assassin whose exceptional skills were matched only by his arrogance. After a reckless failure at Solomon's Temple violated the sacred tenets of the Assassin's Creed, he was stripped of his rank and forced by his Mentor, Al Mualim, to embark on a quest for redemption.
+          </p>
+
+          <p class="character-bio-2">
+            Hunting nine key targets across the Holy Land during the Third Crusade, Altaïr's journey humbled him, transforming him into a true leader. By questioning his targets and uncovering the truth behind the Apple of Eden, he revolutionized the Brotherhood from within, rewriting their codes and laying down the modern foundations of the Creed.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Ezio's section (reversed positioning, same as Bayek) -->
+    <section id="ezio" class="character-section ezio-bg section-reversed">
+
+      <div class="character-container">
+
+        <!-- Image column (CSS pushes it to the right) -->
+        <div class="character-image-box">
+          <img src="img/assassin-s-creed-brotherhood-assassin-s-creed-ii-assassin-s-creed-ezio-trilogy-ezio-auditore-others-d7bab49f9bd13343d6c0aabd6f90e4e5.png" alt="Ezio Auditore da Firenze" class="character-img">
+        </div>
+
+        <!-- Content column (CSS pushes it to the left) -->
+        <div class="character-content-box">
+          <span class="character-era-top">1476 C.E. — Italian Renaissance</span>
+
+          <h2 class="character-name">Ezio Auditore da Firenze</h2>
+
+          <span class="character-game-sub">Assassin's Creed II - Assassin's Creed Brotherhood - Assassin's Creed Revelations</span>
+
+          <p class="character-bio">
+            Born into the nobility of Florence, Ezio Auditore's life was shattered when his father and brothers were unjustly executed. Seeking justice and fueled by vengeance, he discovered his family's hidden legacy within the Assassin Brotherhood, stepping into the robes of his ancestors to hunt down the conspirators behind the tragedy.
+          </p>
+
+          <p class="character-bio-2">
+            Over decades of relentless struggle against the Templar Order led by the Borgias, Ezio grew from a charismatic, hot-headed youth into a legendary Master Assassin and Mentor. His leadership united the Brotherhood across Italy, securing Rome and Venice, while his ultimate journey transformed him into the most revered figure in history.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Shadows section (Naoe and Yasuke) -->
+    <section id="shadows" class="character-section shadows-bg">
+
+      <!-- Shared header for era/game title -->
+      <div class="shadows-header">
+        <h2 class="character-era-top">1579 C.E. — Azuchi-Momoyama Period</h2>
+        <span class="character-game-sub" style="text-align: center; display: block; margin-bottom: 40px;">Assassin's Creed Shadows</span>
+      </div>
+
+      <div class="shadows-container">
+
+        <!-- Column 1: Naoe's info (left) -->
+        <div class="shadows-col shadows-text-left">
+          <h3 class="shadows-char-title">Naoe</h3>
+          <p class="character-bio">
+            A fierce and agile shinobi from the province of Iga, Naoe is the daughter of the legendary Fujibayashi Nagato. After her home is destroyed by Oda Nobunaga's forces, she embarks on a path of vengeance, mastering the arts of stealth, grappling hooks, and the Hidden Blade to fight for her people from the shadows.
+          </p>
+        </div>
+
+        <!-- Column 2: center, both character renders side by side -->
+        <div class="shadows-center-images">
+          <img src="img/AC_Shadows_Render_de_Naoe.webp" alt="Naoe" class="shadows-img img-naoe">
+          <img src="img/AC_Shadows_Yasuke_Render.webp" alt="Yasuke" class="shadows-img img-yasuke">
+        </div>
+
+        <!-- Column 3: Yasuke's info (right) -->
+        <div class="shadows-col shadows-text-right">
+          <h3 class="shadows-char-title">Yasuke</h3>
+          <p class="character-bio">
+            The legendary African samurai, Yasuke arrived in Japan and quickly rose through the ranks to serve the powerful daimyo Oda Nobunaga. Combining immense strength with disciplined swordplay, he fights with honor and heavy weaponry, finding a new purpose in a foreign land while his destiny crosses with Naoe's.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Edward Kenway's section (standard positioning, same as Basim/Altaïr) -->
+    <section id="edward" class="character-section edward-bg">
+      <div class="character-container">
+
+        <!-- Left column: image -->
+        <div class="character-image-box">
+          <img src="img/Render_de_Edward.webp" alt="Edward Kenway" class="character-img">
+        </div>
+
+        <!-- Right column: content -->
+        <div class="character-content-box">
+          <span class="character-era-top">1715 C.E. — Golden Age of Piracy</span>
+
+          <h2 class="character-name">Edward Kenway</h2>
+
+          <span class="character-game-sub">Assassin's Creed IV Black Flag</span>
+
+          <p class="character-bio">
+            A brash and charismatic Welsh pirate, Edward Kenway left his homeland for the West Indies in search of gold, glory, and notoriety. Sailing the Caribbean as the captain of the Jackdaw, his greed initially draws him into the ancient war between the Assassins and the Templars, tracking a mysterious place known only as the Observatory.
+          </p>
+
+          <p class="character-bio-2">
+            Though he initially wears the Assassin robes merely for profit and convenience, the devastating loss of his closest allies and the collapse of the pirate republic of Nassau force him to mature. Embracing the true meaning of the Creed, Edward transforms his selfish desires into a fight for freedom, becoming a legendary Master Assassin.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Shay Cormac's section (reversed positioning, same as Bayek) -->
+    <section id="shay" class="character-section shay-bg section-reversed">
+      <div class="character-container">
+
+        <!-- Image column (CSS pushes it to the right) -->
+        <div class="character-image-box">
+          <img src="img/ACRG_Shay_Sem_Capuz.webp" alt="Shay Patrick Cormac" class="character-img">
+        </div>
+
+        <!-- Content column (CSS pushes it to the left) -->
+        <div class="character-content-box">
+          <span class="character-era-top">1752 C.E. — Seven Years' War</span>
+
+          <h2 class="character-name">Shay Patrick Cormac</h2>
+
+          <span class="character-game-sub">Assassin's Creed Rogue</span>
+
+          <p class="character-bio">
+            Initially a young and questioning member of the Colonial Brotherhood of Assassins, Shay Patrick Cormac began to doubt the Brotherhood's methods after a catastrophic mission in Lisbon caused thousands of innocent deaths. Realizing his Mentor was willing to risk total destruction for Precursor artifacts, Shay broke his vows to protect the innocent.
+          </p>
+
+          <p class="character-bio-2">
+            Betrayed and left for dead, Shay was saved by Templars and chose to join the Templar Order as an Assassin Hunter. Wielding his lethal air rifle and captaining the Morrigan, he dedicated his life to hunting down his former brothers across North America, drastically reshaping the fate of both factions during the Seven Years' War.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Connor / Ratonhnhaké:ton's section (standard positioning, left) -->
+    <section id="connor" class="character-section connor-bg">
+      <div class="character-container">
+
+        <!-- Left column: image -->
+        <div class="character-image-box">
+          <img src="img/Ratonhnhaketon_AC3.png" alt="Ratonhnhaké:ton (Connor)" class="character-img">
+        </div>
+
+        <!-- Right column: content -->
+        <div class="character-content-box">
+          <span class="character-era-top">1754 C.E. — American Revolutionary War</span>
+
+          <h2 class="character-name">Ratonhnhaké:ton (Connor)</h2>
+
+          <span class="character-game-sub">Assassin's Creed III</span>
+
+          <p class="character-bio">
+            Born to a Kanien'kehá:ka (Mohawk) mother and the Templar Grand Master Haytham Kenway, Ratonhnhaké:ton grew up amidst the tension of Colonial America. After his village was burned during his childhood, he sought guidance from the Ancient One, leading him to Master Assassin Achilles Davenport to train in the ways of the Brotherhood.
+          </p>
+
+          <p class="character-bio-2">
+            Adopting the name Connor to blend into colonial society, he navigated the chaos of the American Revolution to protect his people's land and secure freedom for the emerging nation. Armed with his iconic Tomahawk, bow, and unwavering moral compass, Connor fought tirelessly against the Templar conspiracy, leaving a lasting legacy on the birth of America.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Arno Dorian's section (reversed positioning, right) -->
+    <section id="arno" class="character-section arno-bg section-reversed">
+      <div class="character-container">
+
+        <!-- Image column (CSS pushes it to the right) -->
+        <div class="character-image-box">
+          <img src="img/Arno_Dorian.webp" alt="Arno Victor Dorian" class="character-img">
+        </div>
+
+        <!-- Content column (CSS pushes it to the left) -->
+        <div class="character-content-box">
+          <span class="character-era-top">1789 C.E. — French Revolution</span>
+
+          <h2 class="character-name">Arno Victor Dorian</h2>
+
+          <span class="character-game-sub">Assassin's Creed Unity</span>
+
+          <p class="character-bio">
+            Born into a noble French-Austrian family, Arno Victor Dorian suffered profound loss early in life with the murder of his father. Adopted by François de la Serre, the Grand Master of the French Templars, Arno grew up unaware of the ancient conflict—until his foster father was assassinated, framing Arno for the crime.
+          </p>
+
+          <p class="character-bio-2">
+            Imprisoned in the Bastille, Arno met the Assassin Bellec and joined the Parisian Brotherhood to redeem himself and uncover the true conspirators. Navigating the blood-soaked streets of Paris during the French Revolution, Arno wielded the Phantom Blade while torn between his loyalty to the Creed and his deep love for Élise de la Serre.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Syndicate section (Jacob and Evie Frye) -->
+    <section id="syndicate" class="character-section syndicate-bg">
+
+      <!-- Shared header for era/game title -->
+      <div class="syndicate-header">
+        <h2 class="character-era-top" style="text-align: center; margin-bottom: 5px;">1868 C.E. — Industrial Revolution</h2>
+        <span class="character-game-sub" style="text-align: center; display: block; margin-bottom: 40px;">Assassin's Creed Syndicate</span>
+      </div>
+
+      <div class="syndicate-container">
+
+        <!-- Column 1: Jacob Frye's info (left) -->
+        <div class="syndicate-col syndicate-text-left">
+          <h3 class="syndicate-char-title">Jacob Frye</h3>
+          <p class="character-bio">
+            A headstrong, charismatic, and reckless Master Assassin, Jacob Frye preferred action over philosophy. Determined to liberate Victorian London from the oppressive grip of Templar Grand Master Crawford Starrick, Jacob formed the "Rooks"—a powerful street gang—to take over the city's underworld district by district.
+          </p>
+        </div>
+
+        <!-- Column 2: center, both twins side by side -->
+        <div class="syndicate-center-images">
+          <img src="img/ACS_Render_de_Jacob_Frye.webp" alt="Jacob Frye" class="syndicate-img img-jacob">
+          <img src="img/ACS_Render_de_Evie_Frye.webp" alt="Evie Frye" class="syndicate-img img-evie">
+        </div>
+
+        <!-- Column 3: Evie Frye's info (right) -->
+        <div class="syndicate-col syndicate-text-right">
+          <h3 class="syndicate-char-title">Evie Frye</h3>
+          <p class="character-bio">
+            The elder twin by four minutes, Evie Frye was a tactical, disciplined, and master of stealth who strictly adhered to the tenets of the Creed. While her brother fought in the streets, Evie focused on tracking down First Civilization artifacts, hunting the Shroud of Eden, and countering Templar schemes with surgical precision.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="sync-complete" class="sync-complete">
+
+      <div class="sync-content">
+
+        <span class="sync-status">
+          ANIMUS STATUS
+        </span>
+
+        <h1 class="sync-title-big">
+          SYNCHRONIZATION
+        </h1>
+
+        <h2 class="sync-complete-text">
+          COMPLETE
+        </h2>
+
+        <div class="sync-divider"></div>
+
+        <p class="sync-memory">
+          MEMORY SEQUENCE RECONSTRUCTED
+        </p>
+
+        <p class="sync-100">
+          100%
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- Featured game section -->
+    <section id="latest-game" class="latest-section">
+      <div class="latest-container">
+
+        <!-- Cover column -->
+        <div class="game-cover-box">
+          <a href="https://youtu.be/PhQ3yQjUgAc?si=WSpI7dFQJ9exAylB" target="_blank" class="cover-link" title="Watch Trailer">
+            <img src="img/30972495c4d1b567dcd015b80c0d3af9c946efc8822944d7.avif" alt="Assassin's Creed Black Flag Resynced" class="game-cover">
+            <div class="play-overlay">
+              <span class="play-icon">▶</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Info column -->
+        <div class="game-info-box">
+
+          <h2>ASSASSIN'S CREED BLACK FLAG RESYNCED</h2>
+          <p class="latest-subtitle">1715 C.E. — THE GOLDEN AGE OF PIRACY</p>
+
+          <p class="latest-desc">
+            Return to the West Indies and relive the legendary journey of Edward Kenway. Set sail across the Caribbean, command the Jackdaw, and experience the golden age of piracy synchronized in high definition.
+          </p>
+
+          <div class="btn-group">
+            <a href="https://youtu.be/WjsTLe7bBUA?si=mLxu5MF6-RWAGPnX" target="_blank" class="action-btn secondary-btn">
+              WATCH TRAILER
+            </a>
+            <a href="https://www.ubisoft.com/pt-br/game/assassins-creed/black-flag-resynced" target="_blank" class="action-btn primary-btn">
+              BUY GAME
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Final section / Animus-styled footer -->
+  <footer id="join-brotherhood" class="brotherhood-footer-section">
+    <div class="brotherhood-content">
+
+      <!-- Top tag -->
+      <span class="brotherhood-subtag">BECOME PART OF THE CREED</span>
+
+      <!-- Main title -->
+      <h2 class="brotherhood-main-title">JOIN THE BROTHERHOOD</h2>
+
+      <p class="brotherhood-subtext">THE CREED ENDURES ACROSS THE AGES</p>
+
+      <!-- Center divider with the Creed symbol -->
+      <div class="creed-divider">
+        <div class="divider-line"></div>
+        <div class="creed-logo">
+          <img src="img/250px-Assassins_creed_logo.png" alt="Assassin's Creed Logo">
+        </div>
+        <div class="divider-line"></div>
+      </div>
+
+      <!-- Contact and social links -->
+      <div class="footer-social-nav">
+        <a href="https://www.instagram.com/assassinscreed/" target="_blank">INSTAGRAM</a>
+        <span class="nav-sep">|</span>
+        <a href="https://www.youtube.com/@assassinscreed" target="_blank">YOUTUBE</a>
+        <span class="nav-sep">|</span>
+        <a href="https://discord.com/invite/ac" target="_blank">DISCORD</a>
+        <span class="nav-sep">|</span>
+        <a href="https://x.com/assassinscreed" target="_blank">X (TWITTER)</a>
+      </div>
+
+      <!-- Copyright -->
+      <p class="copyright-text">© 2026 ASSASSIN'S CREED FAN PROJECT. ALL RIGHTS RESERVED.</p>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 # Assassin's Creed Timeline
 
-A single-page fan site that takes you on a scroll-driven journey through the entire Assassin's Creed timeline — from Kassandra in 431 B.C.E. to Jacob & Evye Frye in 1868 C.E. Each protagonist gets their own section with era, game, and bio, alongside a live "synchronization %" tracker and a side navigation that follows you as you scroll.
+A single-page fan site that takes you on a scroll-driven journey through the entire Assassin's Creed timeline — from Kassandra in 431 B.C.E. to Jacob & Evie Frye in 1868 C.E. Each protagonist gets their own section with era, game, and bio, alongside a live "synchronization %" tracker and a side navigation that follows you as you scroll.
 
 Built with plain HTML, CSS and JavaScript, using [GSAP](https://gsap.com/) and ScrollTrigger for the animations — each character section animates in with a subtle "Animus glitch" effect and fades out as you scroll past, tying the whole experience to the feel of syncing through a memory.
 

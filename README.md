@@ -28,7 +28,7 @@ Built with plain HTML, CSS and JavaScript, using [GSAP](https://gsap.com/) and S
 
 ## Features
 
-- 🕰️ Chronological timeline of every mainline protagonist, from Ancient Greece to Feudal Japan
+- 🕰️ Chronological timeline of every mainline protagonist, from Ancient Greece to Industrial Revolutuon
 - 📊 Scroll-synced "synchronization" progress indicator that fills up as you read through the timeline
 - 🧭 Fixed side navigation highlighting the era currently in view
 - ✨ GSAP ScrollTrigger animations (entrance **and** exit) for every character section, with a subtle "glitch" effect on entry
